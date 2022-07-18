@@ -1,0 +1,36 @@
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: pnpm install # runs during prebuild
+    command: pnpm dev
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    
+    - esbenp.prettier-vscode
+    
+    - dsznajder.es7-react-js-snippets
+    
+    - dbaeumer.vscode-eslint
+    
+    - eamodio.gitlens
+    
+    - aaron-bond.better-comments
+    
+    - gruntfuggly.todo-tree
+    
+    - wayou.vscode-todo-highlight
+
+    - pkief.material-icon-theme
+
+    - usernamehw.errorlens
+
+    - felipecaputo.git-project-manager
+
+    - heybourn.headwind
+
+    - christian-kohler.path-intellisense
