@@ -1,0 +1,9 @@
+
+
+mixin baseInput(name, inputClasses)
+
+  label(for=name) 
+  
+  input&attributes(attributes)(type="text" name=name id=name class=` ${inputClasses}`)
+
+  small 

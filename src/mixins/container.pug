@@ -1,0 +1,10 @@
+
+mixin container(classes) 
+
+    .container.mx-auto(class=classes) 
+
+        if block 
+            block 
+
+        else 
+            p.text-red-500 There is nothing to contain here

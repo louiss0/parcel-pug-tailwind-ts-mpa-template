@@ -1,0 +1,17 @@
+
+include ../mixins/head
+include ../mixins/navbar
+
+html(lang="en")
+    head
+       block head 
+    body
+
+    header
+        +navbar 
+        block header 
+    main 
+        block main 
+    footer
+
+    // TODO: Remember to put footer content here first

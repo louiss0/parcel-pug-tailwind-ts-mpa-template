@@ -1,0 +1,25 @@
+
+include ../mixins/container
+
+mixin navbar 
+
+    - const links = ["home", "about"]
+
+    nav.bg-gray-900.text-gray-50
+
+
+        +container("w-4/5 p-2")
+            ul.flex.gap-8.h-24.items-center 
+                
+                for link in links 
+
+
+                    if link === "home" 
+
+                        li.capitalize 
+                            a(href="/") #{link}
+
+                    else 
+                        
+                        li.capitalize
+                            a(href=`/src/pages/${link}.pug`) #{link}   
